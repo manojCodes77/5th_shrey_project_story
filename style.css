@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 194, 73);
+    background: -moz-linear-gradient(0deg, rgba(255, 194, 73, 1) 0%, rgba(254, 122, 73, 1) 0%, rgba(255, 97, 73, 1) 45%, rgba(255, 81, 209, 1) 75%, rgba(255, 56, 230, 1) 100%, rgba(255, 238, 206, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 194, 73, 1) 0%, rgba(254, 122, 73, 1) 0%, rgba(255, 97, 73, 1) 45%, rgba(255, 81, 209, 1) 75%, rgba(255, 56, 230, 1) 100%, rgba(255, 238, 206, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 194, 73, 1) 0%, rgba(254, 122, 73, 1) 0%, rgba(255, 97, 73, 1) 45%, rgba(255, 81, 209, 1) 75%, rgba(255, 56, 230, 1) 100%, rgba(255, 238, 206, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc249", endColorstr="#ffeece", GradientType=1);
+}
+
+#card{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    overflow: hidden;
+    width: 550px;
+    height: 750px;
+    max-width: 100%;
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+}
+.stories{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: content-box;
+}
+
+.stories::-webkit-scrollbar{
+    height: 3px;
+    background-color: #8e0d0d;
+}
+
+.story{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 1px solid maroon;
+    background-color: #ffcc00;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+
+    /* background-color: firebrick; */
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
