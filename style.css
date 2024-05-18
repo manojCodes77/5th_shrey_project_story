@@ -30,6 +30,7 @@ body {
     width: 450px;
     height: 750px;
     max-width: 100%;
+    max-height: 90%;
     position: relative;
     margin: 30px auto;
     text-align: center;
@@ -78,10 +79,10 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
     #card{
         width: 90vw;
-        height: 50vh;
+        height: 80vh;
     }
     .stories{
         height: 35vw;
