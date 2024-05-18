@@ -81,7 +81,7 @@ body {
 @media screen and (max-width: 450px){
     #card{
         width: 90vw;
-        height: 90vh;
+        height: 80vh;
     }
     .stories{
         height: 35vw;
