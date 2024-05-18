@@ -27,8 +27,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     overflow: hidden;
-    width: 550px;
-    height: 750px;
+    width: 450px;
+    height: 690px;
     max-width: 100%;
     position: relative;
     margin: 30px auto;
@@ -76,4 +76,19 @@ body {
     background-size: cover;
     background-position: center;
     display: none;
+}
+
+@media screen and (max-width: 450px){
+    #card{
+        width: 90vw;
+        height: 90vh;
+    }
+    .stories{
+        height: 35vw;
+    }
+    .story{
+        height: 30vw;
+        width: 30vw;
+    }
+    
 }
