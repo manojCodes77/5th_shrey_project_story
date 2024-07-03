@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 2.5vh;
 }
 
 html,
@@ -18,7 +19,7 @@ header {
     align-items: center;
     background: #333;
     color: white;
-    padding: 10px;
+    padding: 1vh;
     position: absolute;
     top: 0;
     width: 100%;
@@ -28,8 +29,9 @@ header {
     background: #007bff;
     color: white;
     border: none;
-    padding: 1.5vh 2.5vh;
+    padding: 1vh 1vh;
     cursor: pointer;
+    font-size: 1.8vh;
 }
 
 #toggle-dark-mode:hover {
@@ -51,12 +53,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     overflow: hidden;
-    width: 450px;
+    width: 49vh;
     height: 80vh;
-    max-width: 100%;
+    max-width: 80%;
 
     position: relative;
-    margin: 30px auto;
+    margin: 10vh auto;
     margin-top: 10vh;
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -66,10 +68,10 @@ body {
     transform: scale(1.05);
 }
 .stories{
-    height: 200px;
+    height: 19vh;
     width: 100%;
     background-color: rgb(229, 196, 196);
-    padding: 10px;
+    padding: 0.8vh;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -82,13 +84,13 @@ body {
 }
 
 .story{
-    height: 180px;
-    width: 180px;
+    height: 18vh;
+    width: 18vh;
     border-radius: 50%;
     border: 1px solid maroon;
     background-color: #ffcc00;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 1.5vh;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -114,7 +116,6 @@ body {
     display: none;
 }
 
-/* dark mode */
 .dark-mode {
     background: linear-gradient(145deg, #0f0f0f, #3e3e3e, #0f0f0f);
     color: #e0e0e0;
@@ -132,5 +133,5 @@ body {
 }
 .dark-mode #card {
     background: hsl(0, 1%, 46%);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1vh rgba(255, 255, 255, 0.1);
 }
