@@ -12,6 +12,30 @@ body {
     overflow-y: hidden;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#toggle-dark-mode {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1.5vh 2.5vh;
+    cursor: pointer;
+}
+
+#toggle-dark-mode:hover {
+    background: #0056b3;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: rgb(255, 194, 73);
@@ -27,17 +51,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
     overflow: hidden;
-    width: 550px;
-    height: 750px;
+    width: 450px;
+    height: 80vh;
     max-width: 100%;
+
     position: relative;
     margin: 30px auto;
+    margin-top: 10vh;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#card:hover {
+    transform: scale(1.05);
 }
 .stories{
     height: 200px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(229, 196, 196);
     padding: 10px;
     white-space: nowrap;
     overflow-x: auto;
@@ -58,7 +89,13 @@ body {
     background-color: #ffcc00;
     display: inline-block;
     margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.story:hover {
+    transform: scale(1.1);
+}
+
 
 .story img{
     height: 100%;
@@ -72,8 +109,28 @@ body {
     height: 100%;
     width: 100%;
 
-    /* background-color: firebrick; */
     background-size: cover;
     background-position: center;
     display: none;
+}
+
+/* dark mode */
+.dark-mode {
+    background: linear-gradient(145deg, #0f0f0f, #3e3e3e, #0f0f0f);
+    color: #e0e0e0;
+}
+
+.dark-mode header{
+    background-color: #000000;
+}
+
+.dark-mode .story {
+    background-color: #555;
+}
+.dark-mode .stories{
+    background-color: #555;
+}
+.dark-mode #card {
+    background: hsl(0, 1%, 46%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
